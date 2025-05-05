@@ -1,38 +1,89 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
 .App {
   text-align: center;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.2rem;
+  color: #0077cc;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sentence {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: #f9fafb;
+  padding: 15px;
+  border-left: 4px solid #0077cc;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+  width: 90%;
+  max-width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: #fdfdfd;
+  transition: border 0.2s;
+}
+
+textarea:focus {
+  border-color: #0077cc;
+}
+
+.progress-bar {
+  width: 90%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin: 10px auto 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+h2 {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #444;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restart-btn:hover {
+  background-color: #005fa3;
 }
