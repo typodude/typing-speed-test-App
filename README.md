@@ -1,3 +1,124 @@
+# 🧠 Typing Speed Test Web App
+
+A sleek and simple React-based Typing Speed Test application that helps users measure their typing speed (WPM) and accuracy in real-time. This app fetches random sentences and evaluates your performance as you type.
+
+## 🚀 Features
+
+- 🔄 Fetches random sentences from an API (with fallback)
+- 📊 Progress bar indicating how much of the sentence is typed
+- ⏱️ Calculates Words Per Minute (WPM)
+- 🎯 Computes typing accuracy percentage
+- ♻️ Restart feature to retry with a new sentence
+- 📱 Fully responsive UI
+
+
+## 📦 Tech Stack
+
+- **React** – Frontend Framework
+- **JavaScript** – Logic & Functionality
+- **HTML & CSS** – Layout and Styling
+- **gh-pages** – GitHub Pages Deployment
+
+
+
+## 🔧 Getting Started (Local Setup)
+
+### 1. Clone the Repository
+
+git clone https://github.com/typodude/typing-speed-test-App.git
+cd typing-speed-test-App
+
+
+### 2. Install Dependencies
+
+bash
+npm install
+
+
+### 3. Start the Application
+
+bash
+npm start
+
+The app will run locally at:
+👉 `http://localhost:3000`
+
+
+
+## 🌐 Deployment on GitHub Pages
+
+### Step-by-step Guide:
+
+1. **Add `homepage` to `package.json`:**
+
+json
+"homepage": "https://typodude.github.io/typing-speed-test-App"
+
+
+2. **Modify scripts:**
+
+json
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+
+3. **Install gh-pages:**
+
+npm install --save-dev gh-pages
+
+
+4. **Deploy:**
+
+npm run deploy
+
+
+✅ App will be live at:
+**[https://typodude.github.io/typing-speed-test-App](https://typodude.github.io/typing-speed-test-App)**
+
+
+
+## 🖥️ How to Use
+
+1. Read the displayed sentence.
+2. Start typing in the input box.
+3. As you type:
+
+   * Progress bar fills based on how much you’ve typed.
+   * On completion, the app shows:
+
+     * ⏱️ Words Per Minute (WPM)
+     * 🎯 Accuracy percentage
+4. Click 🔁 **Restart** to load a new sentence.
+
+
+
+## ✨ Future Ideas
+
+* Add difficulty levels
+* Leaderboard with scores
+* Theme switcher (light/dark mode)
+* Real-time typing competition with friends
+
+
+
+## 🙋‍♀️ Author
+
+**Athira**
+💼 [GitHub Profile](https://github.com/typodude)
+
+
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
